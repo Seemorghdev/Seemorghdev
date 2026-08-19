@@ -5,6 +5,17 @@
   Building reliable Python, cloud, and distributed systems with strong operational boundaries.
 </p>
 
+```text
+$ whoami
+Mehrdad Touraji
+
+$ focus
+platforms · automation · reliable systems
+
+$ status
+building
+```
+
 <p align="center">
   <img alt="Python" src="https://img.shields.io/badge/Python-111827?style=flat-square&logo=python&logoColor=white" />
   <img alt="Google Cloud" src="https://img.shields.io/badge/Google_Cloud-111827?style=flat-square&logo=googlecloud&logoColor=white" />
