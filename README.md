@@ -43,17 +43,19 @@ I care about software that is understandable under pressure: clear ownership, sa
 
 ## Current flagship work
 
-### Edge Evidence Platform
+### Edge Evidence — start here
 
-A modular evidence-processing system built around separated capture, processing, and replication authority.
-The canonical platform is developed in a private monorepo, with deterministic standalone worker products projected publicly.
+**[Edge Evidence Showcase](https://github.com/Seemorghdev/edge-evidence-showcase)** is the recruiter-facing front door for the current portfolio: architecture, reproducible synthetic integration, Codespaces/local evaluation, bounded live-cloud verification, and explicit claims/limitations.
 
-#### Public worker products
+The system is intentionally split by authority rather than presented as one monolith:
 
-- **[processor-worker](https://github.com/Seemorghdev/edge-evidence-processor-worker)** — bounded, deterministic processing catch-up over an existing SQLite and filesystem authority
-- **[replication-worker](https://github.com/Seemorghdev/edge-evidence-replication-worker)** — immutable evidence replication with collision protection, independent read-back verification, and deterministic convergence
+- **[Showcase](https://github.com/Seemorghdev/edge-evidence-showcase)** — public navigation, reproducibility, synthetic integration, and claim boundaries
+- **[Infrastructure](https://github.com/Seemorghdev/edge-evidence-infrastructure)** — public generalized cloud/platform desired state without execution authority
+- **Reference Platform** — private flagship application/integration surface, including the accepted bounded Cloud Run recruiter path
+- **Operations** — private controlled-execution and evidence-governance surface
+- **Processor / Replication** — private canonical component products for deterministic processing and immutable replication
 
-Both products include runnable demonstrations, reproducible export provenance, focused tests, and explicit non-goals so their operational boundaries remain clear.
+The older public **[processor-worker](https://github.com/Seemorghdev/edge-evidence-processor-worker)** and **[replication-worker](https://github.com/Seemorghdev/edge-evidence-replication-worker)** repositories remain useful generated/export demonstrations, but they are legacy public surfaces rather than the current portfolio entry point.
 
 ## Engineering approach
 
@@ -66,6 +68,7 @@ inspect → classify → propose → authorize → execute → verify → record
 - Keep infrastructure, application, and authority boundaries visible
 - Treat tests and documentation as part of the product
 - Fail closed when identity, provenance, or state cannot be verified
+- Use automation and agent-assisted workflows for throughput while keeping architecture, boundaries, acceptance criteria, verification, and merge decisions under explicit owner control
 
 ## Selected technologies
 
