@@ -43,19 +43,17 @@ I care about software that is understandable under pressure: clear ownership, sa
 
 ## Current flagship work
 
-### Edge Evidence — start here
+### Edge Evidence — flagship
 
-**[Edge Evidence Showcase](https://github.com/Seemorghdev/edge-evidence-showcase)** is the recruiter-facing front door for the current portfolio: architecture, reproducible synthetic integration, Codespaces/local evaluation, bounded live-cloud verification, and explicit claims/limitations.
+**[Edge Evidence Showcase](https://github.com/Seemorghdev/edge-evidence-showcase)** is the public front door: recruiter navigation, reproducible proof, synthetic integration, and explicit claim boundaries.
 
-The system is intentionally split by authority rather than presented as one monolith:
+Edge Evidence is one flagship ecosystem, split by authority so each layer has a clear engineering role:
 
-- **[Showcase](https://github.com/Seemorghdev/edge-evidence-showcase)** — public navigation, reproducibility, synthetic integration, and claim boundaries
-- **[Infrastructure](https://github.com/Seemorghdev/edge-evidence-infrastructure)** — public generalized cloud/platform desired state without execution authority
-- **Reference Platform** — private flagship application/integration surface, including the accepted bounded Cloud Run recruiter path
-- **Operations** — private controlled-execution and evidence-governance surface
-- **Processor / Replication** — private canonical component products for deterministic processing and immutable replication
-
-The older public **[processor-worker](https://github.com/Seemorghdev/edge-evidence-processor-worker)** and **[replication-worker](https://github.com/Seemorghdev/edge-evidence-replication-worker)** repositories remain useful generated/export demonstrations, but they are legacy public surfaces rather than the current portfolio entry point.
+- **Reliable Engine — Processor + Replication.** Deterministic processing, checkpoint/recovery, lineage verification, replay-safe behavior, immutable replication, collision refusal, independent readback, and deterministic convergence. The canonical Processor and Replication products remain private. The public **[processor-worker](https://github.com/Seemorghdev/edge-evidence-processor-worker)** and **[replication-worker](https://github.com/Seemorghdev/edge-evidence-replication-worker)** repositories are legacy generated inspection windows only — not canonical authorities or separate headline projects.
+- **Reference Platform — application/product layer.** Web UI, Evidence API, and Edge Agent compose browser/application interaction, artifact access, bounded inspection, and accepted local/containerized and cloud reviewer evidence around the deterministic components. Canonical source and private provider details remain private.
+- **[Infrastructure](https://github.com/Seemorghdev/edge-evidence-infrastructure) — reviewed desired state + platform guardrails.** This is the direct public technical surface for what reviewed platform state should exist; Terraform/CI and desired state do not grant themselves live execution authority.
+- **Operations — control plane + evidence governance.** Reviewed changes follow a compact control path: `intent → identity → duplicate/history check → policy → runbook binding → one attempt → receipt → verification → evidence`. Execution authority remains separate from Infrastructure desired state.
+- **Showcase — public proof + navigation + reproducibility.** It is the recruiter-facing entry point and evidence boundary, not a replacement implementation authority for the layers above.
 
 ## Engineering approach
 
