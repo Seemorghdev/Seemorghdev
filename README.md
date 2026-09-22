@@ -1,7 +1,7 @@
 <h1 align="center">Mehrdad Touraji</h1>
 
 <p align="center">
-  <strong>Platform & Automation Engineer</strong><br />
+  <strong>Python Systems & Platform Engineer</strong><br />
   Building reliable Python, cloud, and distributed systems with strong operational boundaries.
 </p>
 
