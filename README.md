@@ -41,6 +41,16 @@ My current focus includes:
 
 I care about software that is understandable under pressure: clear ownership, safe retries, observable state transitions, and documentation that matches the running system.
 
+## How I work
+
+I use agent-assisted engineering workflows to increase throughput on bounded implementation, testing, documentation, repository maintenance, and verification tasks.
+
+I retain responsibility for architecture, requirements, system boundaries, acceptance criteria, review, validation, and publication decisions. Generated work is treated as a candidate until it passes the relevant checks and review gates.
+
+This workflow can produce unusually high GitHub activity, including coordinated changes across repositories, generated public projections, validation passes, and documentation synchronization. I do not use commit count as a productivity metric; evaluate the work through the resulting code, tests, CI, reproducibility, review history, and documented boundaries.
+
+See **[Engineering Workflow](ENGINEERING-WORKFLOW.md)** for the operating model behind the activity graph.
+
 ## Current flagship work
 
 ### Edge Evidence — flagship
