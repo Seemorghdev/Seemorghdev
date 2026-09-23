@@ -57,6 +57,8 @@ See **[Engineering Workflow](ENGINEERING-WORKFLOW.md)** for the operating model 
 
 **[Edge Evidence Showcase](https://github.com/Seemorghdev/edge-evidence-showcase)** is the public front door: recruiter navigation, reproducible proof, synthetic integration, and explicit claim boundaries.
 
+**Live Demo:** [Reference Web UI](https://edge-evidence-web-ui-du62ueo2oa-ew.a.run.app/) — bounded synthetic recruiter surface.
+
 Edge Evidence is one flagship ecosystem, split by authority so each layer has a clear engineering role:
 
 - **Reliable Engine — Processor + Replication.** Deterministic processing, checkpoint/recovery, lineage verification, replay-safe behavior, immutable replication, collision refusal, independent readback, and deterministic convergence. Canonical implementation authority remains private. Recruiters can review the current public **[Processor projection](https://github.com/Seemorghdev/edge-evidence-processor-public)** and **[Replication projection](https://github.com/Seemorghdev/edge-evidence-replication-projection)**. The older processor/replication worker repositories remain legacy generated demo exports, not headline portfolio projects.
