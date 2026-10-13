@@ -55,17 +55,23 @@ See **[Engineering Workflow](ENGINEERING-WORKFLOW.md)** for the operating model 
 
 ### Edge Evidence — flagship
 
-**[Edge Evidence Showcase](https://github.com/Seemorghdev/edge-evidence-showcase)** is the public front door: recruiter navigation, reproducible proof, synthetic integration, and explicit claim boundaries.
+Edge Evidence explores how to preserve evidence, process it reliably, and verify that copies match the original.
 
-**Live Demo (JSON/API):** [Heroku synthetic technical proof](https://seemorgh-evidence-showcase-45655632eff2.herokuapp.com/api/demo) — bounded synthetic Processor + Replication proof; returns JSON, not a visual UI.
+**[Open the live Visual Gateway](https://edge-evidence-visual-gateway-2e3eaeb86f95.herokuapp.com/)** — start here. Explore three synthetic examples in a Web UI backed by an Evidence API and a read-only Edge Agent. Click **Explain this example** to understand each state and what a reviewer can inspect. This page inspects example states; it does not execute the complete processing and replication workflow.
+
+**[Deeper technical proof — Processor + Replication (JSON/API)](https://seemorgh-evidence-showcase-45655632eff2.herokuapp.com/api/demo)** — view a synthetic processing result, a verified handoff to replication, independent readback of the copied bytes, and replay with no new writes. This endpoint returns JSON, not a visual application. Both demos use synthetic data and make no production-service claim.
+
+**Explore the public code:** [Processor](https://github.com/Seemorghdev/edge-evidence-processor-public) · [Replication](https://github.com/Seemorghdev/edge-evidence-replication-projection) · [Reference Platform: UI, API, Agent and gateway](https://github.com/Seemorghdev/edge-evidence-reference-platform-public). The [Showcase repository](https://github.com/Seemorghdev/edge-evidence-showcase) explains how to reproduce the technical proof.
+
+Earlier GKE and Cloud Run deployments are retained as historical engineering evidence. They are not presented as currently operational demos; the Heroku links above are the current visitor entry points.
 
 Edge Evidence is one flagship ecosystem, split by authority so each layer has a clear engineering role:
 
 - **Reliable Engine — Processor + Replication.** Deterministic processing, checkpoint/recovery, lineage verification, replay-safe behavior, immutable replication, collision refusal, independent readback, and deterministic convergence. Canonical implementation authority remains private. Recruiters can review the current public **[Processor projection](https://github.com/Seemorghdev/edge-evidence-processor-public)** and **[Replication projection](https://github.com/Seemorghdev/edge-evidence-replication-projection)**. The older processor/replication worker repositories remain legacy generated demo exports, not headline portfolio projects.
-- **[Reference Platform](https://github.com/Seemorghdev/edge-evidence-reference-platform-public) — application/product layer.** Web UI, Evidence API, and Edge Agent compose browser/application interaction, artifact access, bounded inspection, and accepted local/containerized and cloud reviewer evidence around the deterministic components. Canonical source and private provider details remain private.
+- **[Reference Platform](https://github.com/Seemorghdev/edge-evidence-reference-platform-public) — application/product layer.** Web UI, Evidence API, and read-only Edge Agent provide the visual inspection experience. The live Heroku gateway combines these responsibilities in one runtime for this synthetic demonstration; it does not claim production-grade service isolation. Historical cloud validation is separate from today's live demo. Canonical source and private provider details remain private.
 - **[Infrastructure](https://github.com/Seemorghdev/edge-evidence-infrastructure) — reviewed desired state + platform guardrails.** This is the direct public technical surface for what reviewed platform state should exist; Terraform/CI and desired state do not grant themselves live execution authority.
 - **[Operations](https://github.com/Seemorghdev/edge-evidence-operations-public) — control plane + evidence governance.** Reviewed changes follow a compact control path: `intent → identity → duplicate/history check → policy → runbook binding → one attempt → receipt → verification → evidence`. The public projection is recruiter-facing; canonical execution/governance authority remains private and separate from Infrastructure desired state.
-- **Showcase — public proof + navigation + reproducibility.** It is the recruiter-facing entry point and evidence boundary, not a replacement implementation authority for the layers above.
+- **Showcase — technical execution proof + reproducibility.** It provides the deeper synthetic Processor + Replication JSON/API demonstration and instructions for running that proof locally.
 
 ## Engineering approach
 
