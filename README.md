@@ -57,7 +57,7 @@ See **[Engineering Workflow](ENGINEERING-WORKFLOW.md)** for the operating model 
 
 **[Edge Evidence Showcase](https://github.com/Seemorghdev/edge-evidence-showcase)** is the public front door: recruiter navigation, reproducible proof, synthetic integration, and explicit claim boundaries.
 
-**Live Demo:** [Reference Web UI](https://edge-evidence-web-ui-du62ueo2oa-ew.a.run.app/) — bounded synthetic recruiter surface.
+**Live Demo (JSON/API):** [Heroku synthetic technical proof](https://seemorgh-evidence-showcase-45655632eff2.herokuapp.com/api/demo) — bounded synthetic Processor + Replication proof; returns JSON, not a visual UI.
 
 Edge Evidence is one flagship ecosystem, split by authority so each layer has a clear engineering role:
 
