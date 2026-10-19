@@ -5,6 +5,8 @@
   Building reliable Python, cloud, and distributed systems with strong operational boundaries.
 </p>
 
+**Portfolio & documentation:** [Mehridian](https://mehridian.tech/) · [Edge Evidence case study](https://mehridian.tech/projects/edge-evidence) · [Technical Docs](https://docs.mehridian.tech/edge-evidence/)
+
 ```text
 $ whoami
 Mehrdad Touraji
