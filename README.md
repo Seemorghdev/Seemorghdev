@@ -53,6 +53,16 @@ This workflow can produce unusually high GitHub activity, including coordinated 
 
 See **[Engineering Workflow](ENGINEERING-WORKFLOW.md)** for the operating model behind the activity graph.
 
+## Featured model release
+
+### [YOLO11n AOD4 v6 — airborne-object detection](https://github.com/Seemorghdev/yolo11n-aod4-v6)
+
+**[GitHub release](https://github.com/Seemorghdev/yolo11n-aod4-v6)** · **[Hugging Face model](https://huggingface.co/Seemorgh/yolo11n-aod4-v6)** · **[Training report](https://github.com/Seemorghdev/drone-detection-showcase/blob/main/docs/training-report.md)**
+
+A reviewed archival release of a four-class Ultralytics YOLO11n checkpoint for **airplane, bird, drone, and helicopter** detection. The public release includes recovered weights (Git LFS), sanitized notebooks, provenance records, and SHA-256 checksums.
+
+The retained validation record reports **mAP50 0.96518** and **mAP50–95 0.66663** across **4,514 images**, aggregated over all four classes. These are historical validation results, not independently reproduced measurements, drone-only scores, or evidence of field reliability. The original application and raw dataset are not published. The release preserves the model's **AGPL-3.0** notice, with separate **CC BY 4.0** dataset attribution.
+
 ## Current flagship work
 
 ### Edge Evidence — flagship
