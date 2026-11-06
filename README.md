@@ -79,11 +79,16 @@ Earlier GKE and Cloud Run deployments are retained as historical engineering evi
 
 Edge Evidence is one flagship ecosystem, split by authority so each layer has a clear engineering role:
 
-- **Reliable Engine — Processor + Replication.** Deterministic processing, checkpoint/recovery, lineage verification, replay-safe behavior, immutable replication, collision refusal, independent readback, and deterministic convergence. Canonical implementation authority remains private. Recruiters can review the current public **[Processor projection](https://github.com/Seemorghdev/edge-evidence-processor-public)** and **[Replication projection](https://github.com/Seemorghdev/edge-evidence-replication-projection)**. The older processor/replication worker repositories remain legacy generated demo exports, not headline portfolio projects.
+- **Reliable Engine — Processor + Replication.** Deterministic processing, checkpoint/recovery, lineage verification, replay-safe behavior, immutable replication, collision refusal, independent readback, and deterministic convergence. Canonical implementation authority remains private. Recruiters can review the current public **[Processor projection](https://github.com/Seemorghdev/edge-evidence-processor-public)** and **[Replication projection](https://github.com/Seemorghdev/edge-evidence-replication-projection)**. Older worker demo exports are legacy generated artifacts, not headline portfolio projects.
 - **[Reference Platform](https://github.com/Seemorghdev/edge-evidence-reference-platform-public) — application/product layer.** Web UI, Evidence API, and read-only Edge Agent provide the visual inspection experience. The live Heroku gateway combines these responsibilities in one runtime for this synthetic demonstration; it does not claim production-grade service isolation. Historical cloud validation is separate from today's live demo. Canonical source and private provider details remain private.
 - **[Infrastructure](https://github.com/Seemorghdev/edge-evidence-infrastructure) — reviewed desired state + platform guardrails.** This is the direct public technical surface for what reviewed platform state should exist; Terraform/CI and desired state do not grant themselves live execution authority.
 - **[Operations](https://github.com/Seemorghdev/edge-evidence-operations-public) — control plane + evidence governance.** Reviewed changes follow a compact control path: `intent → identity → duplicate/history check → policy → runbook binding → one attempt → receipt → verification → evidence`. The public projection is recruiter-facing; canonical execution/governance authority remains private and separate from Infrastructure desired state.
 - **Showcase — technical execution proof + reproducibility.** It provides the deeper synthetic Processor + Replication JSON/API demonstration and instructions for running that proof locally.
+
+## Selected project work
+
+- **[Seemorgh operator console](https://mehridian.tech/projects/seemorgh-operator-console).** Five sensor feeds that disagree on frame, units, timestamps and identity, fused into one prioritised air picture, with a recorded replay you can scrub.
+- **[What the records establish across 15 repositories](https://mehridian.tech/research/project03).** Project 03: I audited my own repositories. Green checks were nearly universal; acceptance, traceability and observed runtime were almost absent.
 
 ## Engineering approach
 
@@ -119,6 +124,10 @@ I am open to remote, hybrid, and relocation opportunities across:
 - AI infrastructure and controlled agent platforms
 
 I value practical teams, clear ownership, and work that ships.
+
+## Licence
+
+CC BY 4.0. See `LICENSE`.
 
 ---
 
